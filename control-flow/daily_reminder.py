@@ -16,11 +16,11 @@ match priority:
         if time_bound == 'yes':
             reminder += " that requires immediate attention today!"
     case 'medium':
-        reminder = f"Note: '{task}' is a medium priority task."
+        reminder = f"Reminder: '{task}' is a medium priority task."
         if time_bound == 'yes':
             reminder += " Try to complete it soon."
     case 'low':
-        reminder = f"Note: '{task}' is a low priority task."
+        reminder = f"Reminder: '{task}' is a low priority task."
         if time_bound == 'yes':
             reminder += " Complete it if you have time today."
         else:
@@ -30,5 +30,6 @@ match priority:
 
 # Print the customized reminder
 print(reminder)
+
 
            
