@@ -29,7 +29,10 @@ match priority:
         reminder = "Invalid priority level entered."
 
 # Print the customized reminder
-print(reminder)
+if priority == "low" and time_bound != "yes":
+    print(reminder)
+else:
+    print(f"reminder: {reminder}")
 
 
            
