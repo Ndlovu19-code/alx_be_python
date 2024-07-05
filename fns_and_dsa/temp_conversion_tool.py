@@ -1,4 +1,4 @@
-# Define global conversion factors
+# Define two global variables
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 CELSIUS_FREEZING_POINT = 32  # Freezing point of water in Fahrenheit
