@@ -3,6 +3,15 @@
 # Initialize an empty shopping list
 shopping_list = []
 
+def display_menu():
+    """Display the menu options."""
+    print("\nShopping List Manager")
+    print("1. Add item")
+    print("2. Remove item")
+    print("3. View list")
+    print("4. Clear list")
+    print("5. Exit")
+
 def add_item(item):
     """Add an item to the shopping list."""
     shopping_list.append(item)
@@ -32,12 +41,7 @@ def clear_list():
 
 def main():
     while True:
-        print("\nShopping List Manager")
-        print("1. Add item")
-        print("2. Remove item")
-        print("3. View list")
-        print("4. Clear list")
-        print("5. Exit")
+        display_menu()
         
         choice = input("Enter your choice (1-5): ")
         
