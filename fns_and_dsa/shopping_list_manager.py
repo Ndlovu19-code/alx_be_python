@@ -1,7 +1,7 @@
 # shopping_list_manager.py
 
 # Initialize an empty shopping list
-shopping_list = []
+shopping_list = ["Add item", "Remove item", "View list", "Clear list", "Exit" ]
 
 def display_menu[]:
     """Display the menu options."""
