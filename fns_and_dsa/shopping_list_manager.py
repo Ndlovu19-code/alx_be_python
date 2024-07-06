@@ -3,7 +3,7 @@
 # Initialize an empty shopping list
 shopping_list = []
 
-def display_menu():
+def display_menu[]:
     """Display the menu options."""
     print("\nShopping List Manager")
     print("1. Add item")
