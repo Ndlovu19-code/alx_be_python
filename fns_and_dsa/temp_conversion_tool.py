@@ -4,17 +4,15 @@
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 FAHRENHEIT_TO_CELSIUS_INTERCEPT = 32
-CELSIUS_TO_FAHRENHEIT_INTERCEPT = 32
+CELSIUS_TO_FAHRENHEIT_INTERCEPT = 0  # Correction: Intercept for Celsius to Fahrenheit should be 0
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius using global conversion factors."""
-    global FAHRENHEIT_TO_CELSIUS_FACTOR, FAHRENHEIT_TO_CELSIUS_INTERCEPT
     celsius = (fahrenheit - FAHRENHEIT_TO_CELSIUS_INTERCEPT) * FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
 
 def convert_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit using global conversion factors."""
-    global CELSIUS_TO_FAHRENHEIT_FACTOR, CELSIUS_TO_FAHRENHEIT_INTERCEPT
     fahrenheit = (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + CELSIUS_TO_FAHRENHEIT_INTERCEPT
     return fahrenheit
 
@@ -30,12 +28,8 @@ def main():
             converted_temp = convert_to_celsius(temperature)
             print(f"{temperature}°F is equal to {converted_temp:.2f}°C")
         else:
-            print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-    except ValueError:
-        print("Invalid temperature. Please enter a numeric value.")
+            print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit
 
-if __name__ == "__main__":
-    main()
 
 
        
