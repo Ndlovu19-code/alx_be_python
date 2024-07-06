@@ -28,7 +28,8 @@ def main():
             converted_temp = convert_to_fahrenheit(temperature)
             print(f"{temperature}°C is {converted_temp:.2f}°F")
         elif unit == 'F':
-            converted_temp = convert_to_celsius(temperature
+            converted_temp = convert_to_celsius(temperature)
+            
 
        
 
